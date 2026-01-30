@@ -18,23 +18,9 @@ MatchPro AI is a professional, SEO-optimized web application that helps job seek
    git push -u origin main
    ```
 
-### 2. Deploy to Netlify
-1. Log in to [Netlify](https://app.netlify.com/).
-2. Click **Add new site** > **Import an existing project**.
-3. Select **GitHub** and pick this repository.
-4. Netlify will automatically detect the settings:
-   - **Build command**: `npm run build`
-   - **Publish directory**: `dist`
-5. **IMPORTANT (SECURITY)**: 
-   - Go to **Site Configuration** > **Environment variables**.
-   - Create a new variable named `API_KEY`.
-   - Paste your Google Gemini API Key.
-6. Trigger a new deploy.
-
 ## 🛠 Features
 - **Multi-modal Analysis**: Upload PDF, Images, or paste Text.
 - **ATS Optimization**: Identifies missing keywords and skill gaps.
 - **Visual Insights**: Interactive charts showing skill overlap.
 
-## 🛡 Security
-This app uses `process.env.API_KEY` injected during the build process. Your key is never stored in the source code on GitHub.
+Live Demo - https://matchpro-ai.netlify.app/
